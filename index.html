@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/296226f9e7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <title>Site Pessoal - Ítalo Garcez Carvalho</title>
   </head>
 
@@ -31,6 +32,7 @@
           <a class="nav-link" href="#experiência">experiência</a>
           <a class="nav-link" href="#repositorios">repositórios github</a>
           <a class="nav-link" href="#conteudo">conteúdo</a>
+          <a class="nav-link" href="Páginapesquisa.html">Página de pesquisa</a>
         </nav>
       </div>
       <div class="search">
@@ -56,25 +58,31 @@
     <main class="main">
       <section id="perfil" class="row perfil">
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <img src="images/IMG_20210729_150409679_HDR (1).jpg" />
+          <img
+            id="foto_perfil"
+            src="images/IMG_20210729_150409679_HDR (1).jpg"
+          />
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-5 infos">
           <div class="perfil_infos">
-            <h2><b>Ítalo Garcez Carvalho</b></h2>
-            <h4>
-              <b>Objetivos: </b>Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Tempora hic ad perspiciatis, consequuntur magni
-              laborum praesentium beatae rerum libero quidem mollitia impedit.
-              Corrupti, animi consequuntur.
+            <h2><b>Ítalo Garcez Carvalho </b></h2>
+            <h4 id="bio">
+              <b>Infos:</b>
             </h4>
           </div>
           <div class="perfil_redes">
             <h2><b>Redes Sociais</b></h2>
-            <div>
-              <i class="fab fa-linkedin"></i>
+            <div id="icons">
+              <i
+                class="fab fa-linkedin"
+                onclick="link('https://www.linkedin.com/in/%C3%ADtalo-garcez-carvalho/')"
+              ></i>
               <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-youtube-square"></i>
+              <i
+                class="fab fa-youtube-square"
+                onclick="link('https://www.youtube.com/channel/UCuQ2qjqINaoAp-ilYYnQWWg')"
+              ></i>
             </div>
           </div>
         </div>
@@ -218,7 +226,7 @@
         <div class="col-sm-12 col-md-10 col-lg-8">
           <h1><b>Repositórios Github</b></h1>
         </div>
-        <div class="col-sm-12 col-md-10 col-lg-8 folders">
+        <div id="folder" class="col-sm-12 col-md-10 col-lg-8 folders">
           <div class="col-sm-12 col-md-12 col-lg-4 cartao">
             <div class="col-sm-2 col-md-2 col-lg-3">
               <div class="folders_imagem">
